@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/alcatel_tablet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:text="TABLET"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alcatel_wearable"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alcatel_phone"
+        app:layout_constraintTop_toBottomOf="@+id/vangi"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/alcatel_phone"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        android:text="PHONE"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alcatel_tablet"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vangi"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/alcatel_wearable"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_background"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        android:text="WEARABLES"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/alcatel_tablet"
+        app:layout_constraintTop_toBottomOf="@+id/vangi"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/vangi"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:text="And, please choose the category!"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/alcatel_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

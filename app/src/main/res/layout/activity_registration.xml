@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/purple"
+    tools:context=".Registration">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textSize="40dp"
+            android:fontFamily="@font/juralight"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:hint="E-mail"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/juralight"
+            android:background="@drawable/edittext_background"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/juralight"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/etConPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:hint="Confirm Password"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/juralight"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="14dp"
+                android:fontFamily="@font/juralight"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Login"
+                android:textSize="14dp"
+                android:fontFamily="@font/juralight"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:fontFamily="@font/juralight"
+            android:text="Register"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:stateListAnimator="@null" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

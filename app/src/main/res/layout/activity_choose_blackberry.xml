@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/blackberry_tablet"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button_background"
+        android:text="TABLET"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/blackberry_phone"
+        app:layout_constraintTop_toBottomOf="@+id/vangi"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <Button
+        android:id="@+id/blackberry_phone"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button_background"
+        android:scrollbarDefaultDelayBeforeFade="400"
+        android:text="PHONE"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vangi"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <TextView
+        android:id="@+id/vangi"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:text="Please choose the category!"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <ImageView
+        android:id="@+id/blackberry_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
+        app:srcCompat="@drawable/blackberry_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
